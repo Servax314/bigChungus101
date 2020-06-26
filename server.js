@@ -15,8 +15,9 @@ db.on('error', err => {
 })
 
 app.use(express.json());
+app.use(express.static(__dirname + '/public'));
 
-app.use('/', require('./routes/index.js'));
+//app.use('/', require('./routes/index.js'));
 
 app.listen(port, ()=>{
     console.log('Listening to port ' + port.toString());
