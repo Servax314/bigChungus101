@@ -1,0 +1,24 @@
+{
+  "name": "bigchungus",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Servax314/bigChungus101.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Servax314/bigChungus101/issues"
+  },
+  "homepage": "https://github.com/Servax314/bigChungus101#readme"
+}
