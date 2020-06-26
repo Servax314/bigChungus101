@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const url = 'mongodb://127.0.0.1:27017/bigchungus'
+const port = 3000;
 
 mongoose.connect(url, {useNewUrlParser : true});
 
@@ -13,6 +14,10 @@ db.on('error', err => {
   console.error('connection error:', err)
 })
 
-app.listen(3000, ()=>{
-    console.log('Listening to port 3000');
+app.use(express.json());
+
+app.use('/', require('./routes/index.js'));
+
+app.listen(port, ()=>{
+    console.log('Listening to port ' + port.toString());
 });
